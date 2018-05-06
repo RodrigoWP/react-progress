@@ -40,7 +40,7 @@ import { Progress } from '@rodrigowpl/react-progress'
 
 | Property | Type | Default | Description |
 |:---|:---|:---|:---|
-| backgroundColor | string | #d3d3d3 | Set background color to wrapper element
+| backgroundColor | string | transparent | Set background color to wrapper element
 | progressColor | string | #6197c6 | Set progress bar background color
 | height | number | 3 | Set progress bar height
 

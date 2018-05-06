@@ -4,5 +4,11 @@ yarn.lock
 docs
 example.gif
 coverage
-src/__snapshots__/*
+src/__snapshots__/
+src/progress.story.js
+src/progress.test.js
 config
+README.md
+.gitignore
+.babelrc
+node_modules

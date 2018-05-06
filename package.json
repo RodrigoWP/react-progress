@@ -1,8 +1,7 @@
 {
   "name": "@rodrigowpl/react-progress",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Beautiful progress bar with React",
-  "browser": "dist/main.js",
   "main": "dist/main.js",
   "module": "src/index.js",
   "scripts": {

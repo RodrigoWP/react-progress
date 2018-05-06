@@ -17,8 +17,7 @@ module.exports = {
 
   output: {
     path: paths.dist,
-    filename: 'main.js',
-    libraryTarget: 'umd'
+    filename: 'main.js'
   },
 
   plugins: [

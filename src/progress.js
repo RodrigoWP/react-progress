@@ -89,7 +89,7 @@ Progress.propTypes = {
 
 Progress.defaultProps = {
   backgroundColor: '#d3d3d3',
-  height: 4,
+  height: 3,
   progressColor: '#6197c6'
 }
 

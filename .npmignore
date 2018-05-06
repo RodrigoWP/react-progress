@@ -3,3 +3,6 @@ webpack.config.js
 yarn.lock
 docs
 example.gif
+coverage
+src/__snapshots__/*
+config

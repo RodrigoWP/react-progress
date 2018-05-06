@@ -43,6 +43,8 @@ import { Progress } from '@rodrigowpl/react-progress'
 | backgroundColor | string | transparent | Set background color to wrapper element
 | progressColor | string | #6197c6 | Set progress bar background color
 | height | number | 3 | Set progress bar height
+| position | string | absolute | Set progress bar layout position
+| fromTop | number | 0 | Set progress position from parent top
 
 ## Contributing
 

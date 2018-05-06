@@ -1,13 +1,13 @@
 import React from 'react'
-import { string, number } from 'prop-types'
+import { string, number, oneOf } from 'prop-types'
 import styled from 'styled-components'
 
 const StyledProgress = styled.div`
   background-color: ${p => p.backgroundColor};
   height: ${p => p.height}px;
   width: 100%;
-  position: fixed;
-  top: 0;
+  position: ${p => p.position};
+  top: ${p => p.fromTop}px;
   left: 0;
   z-index: 10;
   border-radius: 2px;
@@ -72,11 +72,13 @@ const StyledProgress = styled.div`
   }
 `
 
-const Progress = ({ progressColor, backgroundColor, height }) => (
+const Progress = ({ progressColor, backgroundColor, height, position, fromTop }) => (
   <StyledProgress
     progressColor={progressColor}
     backgroundColor={backgroundColor}
-    height={height}>
+    height={height}
+    position={position}
+    fromTop={fromTop}>
     <div className='indeterminate' />
   </StyledProgress>
 )
@@ -84,13 +86,17 @@ const Progress = ({ progressColor, backgroundColor, height }) => (
 Progress.propTypes = {
   progressColor: string,
   backgroundColor: string,
-  height: number
+  height: number,
+  position: oneOf(['fixed', 'absolute', 'relative']),
+  fromTop: number
 }
 
 Progress.defaultProps = {
   backgroundColor: 'transparent',
   height: 3,
-  progressColor: '#6197c6'
+  progressColor: '#6197c6',
+  position: 'absolute',
+  fromTop: 0
 }
 
 export { Progress }
